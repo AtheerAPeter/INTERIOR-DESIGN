@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+header {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  width: 1000px;
+  margin: auto;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+}
+
+.content h1 {
+  margin-right: 20px;
+}
+
+.content ul {
+  color: #999999;
+  position: relative;
+  flex: 1;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.content ul li {
+  cursor: pointer;
+  margin-left: 10px;
+  transition: filter 0.2s ease;
+}
+
+.content ul li:hover {
+  filter: brightness(1.2);
+}
+
+.content ul li:nth-last-child(1) {
+  position: absolute;
+  right: 0;
+}
+
+main section img {
+  width: 100%;
+}
+
+main section .cover-p {
+  width: 100%;
+  text-align: center;
+  padding: 50px 0;
+  font-size: 2rem;
+  border-bottom: 1px solid #7070703b;
+}
+
+.content .card {
+  margin: 50px 0;
+}
+.content .card:nth-child(2),
+.content .card:nth-child(3) {
+  margin-left: 20px;
+}
+
+.content .card h4 {
+  margin-bottom: 20px;
+}
+
+.content .card img {
+  margin-bottom: 20px;
+}
+
+.content .card p {
+  color: #707070;
+  margin-bottom: 20px;
+}
+
+.content .card button {
+  cursor: pointer;
+  background-color: #fff;
+  outline: none;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px 20px;
+  transition: color, background-color 0.2s ease;
+}
+
+.content .card button:hover {
+  color: white;
+  background-color: black;
+}
+.cards .content {
+  border-bottom: 1px solid #7070703b;
+}
+
+.images-grid h2 {
+  padding: 50px;
+}
+
+.images-grid .content {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  grid-template-rows: repeat(2, minmax(200px, 1fr));
+  grid-gap: 50px;
+}
+
+.images-grid img {
+  height: 100%;
+  width: 100%;
+}
+
+.images-grid img:nth-child(1) {
+  grid-row: 1/3;
+  grid-column: 1/3;
+}
+
+.images-grid .container {
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  margin-top: 80px;
+  border-top: 1px solid #7070703b;
+}
+
+footer .container {
+  padding: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+footer h2 {
+  color: #999999;
+  cursor: pointer;
+  transition: filter 0.2s ease;
+}
+
+footer h2:hover {
+  filter: brightness(1.2);
+}
